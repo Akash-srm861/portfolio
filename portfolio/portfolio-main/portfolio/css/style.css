@@ -1,0 +1,62 @@
+
+  /* Ensure full viewport height and remove default padding/margins */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background: black; /* Fallback background if video doesn't load */
+}
+
+/* Style for the full-height section */
+.full-height {
+  height: 100vh;
+  position: relative;
+  z-index: 1; /* Ensure content stays on top */
+}
+
+
+/* Black box content styling */
+.black-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  color: white; /* Text color */
+  z-index: 2; /* Ensure content is above video */
+}
+
+/* Profile image style */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.options .btn {
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  background: transparent;
+  text-decoration: none;
+}
+
+.options .btn:hover {
+  background: white;
+  color: black;
+}
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
